@@ -1,0 +1,6 @@
+{
+  "name": "JC's Speech & Theater Adventures",
+  "description": "A minimalist modern Greek museum digital portfolio showcasing Speech and Theater coursework exhibits.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

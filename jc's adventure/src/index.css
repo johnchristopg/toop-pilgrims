@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Cinzel", "Cormorant Garamond", serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  
+  --color-gold: #C5A059;
+  --color-gold-light: #DFCA9B;
+  --color-gold-muted: #EFE8D8;
+  --color-charcoal: #2D2D2D;
+  --color-stone: #524E48;
+  --color-stone-light: #8C877D;
+  --color-marble: #FAF9F6;
+  --color-marble-card: #FFFFFF;
+}
+
+.meander {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20' viewBox='0 0 40 20'%3E%3Cpath d='M0 10h10V5h-5v8h10V0h5v15h-15v5h25V5h-5v5h5' fill='none' stroke='black' stroke-width='1'/%3E%3C/svg%3E");
+  mask-repeat: repeat-x;
+}
+
+.edit-hover:hover {
+  background-color: rgba(197, 160, 89, 0.05);
+  cursor: pointer;
+}
+
+/* Custom scrollbars and refined styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAFAFA;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8D2C6;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+/* Print styling for exporting portfolio */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
